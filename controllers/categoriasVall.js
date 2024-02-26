@@ -30,7 +30,7 @@ const registrarCategoriaPut = async (req, res) => {
   let mensaje = "Modificación exitosa";
 
   try {
-    await RegistrarCategoria.findOneAndUpdate({ _id: _id }, { nombre: nombre, descripcion: descripcion, observación: observacion });
+    await RegistrarCategoria.findOneAndUpdate({ _id: _id }, { nombre: nombre, descripcion: descripcion, observacion: observacion });
   } catch (error) {
     mensaje = "Problemas al modificar";
     console.log(error);
