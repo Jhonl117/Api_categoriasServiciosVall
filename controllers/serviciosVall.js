@@ -1,6 +1,6 @@
 const { response } = require("express");
 
-const RegistrarServicio = require("../models/categoriasVall");
+const RegistrarServicio = require("../models/serviciosVall");
 
 const registrarServicioGet = async (req, res = response) => {
   const registrarServicios = await RegistrarServicio.find();
@@ -17,7 +17,7 @@ const registrarServicioPost = async (req, res) => {
     const registrarServicio = new RegistrarServicio(body);
     await registrarServicio.save();
   } catch (error) {
-    mensaje = "Problemas al crear un registro de Categoria.";
+    mensaje = "Problemas al crear un registro de Servicio.";
     console.log(error);
   }
   res.json({
