@@ -26,7 +26,7 @@ const registrarServicioPost = async (req, res) => {
 
 }
 const registrarServicioPut = async (req, res) => {
-  const { _id, nombre, precio, duracion_aproximada, descripcion} = req.body;
+  const { _id, nombre, precio, duracion_aproximada, descripcion } = req.body;
   let mensaje = "Modificación exitosa";
 
   try {

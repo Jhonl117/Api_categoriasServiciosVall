@@ -26,7 +26,7 @@ const registrarCategoriaPost = async (req, res) => {
 
 }
 const registrarCategoriaPut = async (req, res) => {
-  const { _id, nombre, descripcion, estado, observaciones, codigoCategoria} = req.body;
+  const { _id, nombre, descripcion, estado, observaciones, codigoCategoria } = req.body;
   let mensaje = "Modificación exitosa";
 
   try {
