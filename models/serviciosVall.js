@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose');
 const RegistrarServicioSchema = Schema({
     nombre: {
         type: String,
-        required: [true, 'El nombre del Propietario es obligatorio']
+        required: [true, 'El nombre del Servicio es obligatorio']
     },
     precio: {
         type: Number,
@@ -15,7 +15,7 @@ const RegistrarServicioSchema = Schema({
     },
     descripcion: {
         type: String,
-        required: [true, 'La Descripción es necesaria']
+        required: [true, 'La Descripción no siempre es necesaria']
     }
 });
 
