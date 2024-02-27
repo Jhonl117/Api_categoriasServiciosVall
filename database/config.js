@@ -6,7 +6,7 @@ const dbConnection = async () => {
     try {
         //Envía la conexión
         mongoose.connect(process.env.MONGO_CNN)
-        console.log('Conexión exitosa a la base de datos de Fincas')
+        console.log('Conexión exitosa a la base de datos de categorias y servicios')
     }
     catch (error) {
         //Atrapa el error

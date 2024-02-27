@@ -11,10 +11,14 @@ const RegistrarCategoriaSchema = Schema({
     },
     estado: {
         type: Boolean,
-        required: [true, 'La descripción es es necesaria']
+        required: [true, 'El estado es es necesaria']
     },
-    observacion: {
+    observaciones: {
         type: String,
+        required: [true, 'la observaciones no son necesaria']
+    },
+    codigoCategoria: {
+        type: Number,
         required: [true, 'la observación es necesaria']
     }
 });
