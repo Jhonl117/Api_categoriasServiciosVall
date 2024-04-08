@@ -17,6 +17,10 @@ const RegistrarCategoriaSchema = Schema({
         type: String,
         required: [true, 'la observaciones no son necesaria']
     },
+    IVA: {
+        type: String,
+        required: [true, 'el valor del IVA no son necesaria']
+    },
     codigoCategoria: {
         type: Number,
         required: [true, 'la observación es necesaria']

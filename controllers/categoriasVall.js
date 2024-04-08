@@ -26,11 +26,11 @@ const registrarCategoriaPost = async (req, res) => {
 
 }
 const registrarCategoriaPut = async (req, res) => {
-  const { _id, nombre, descripcion, estado, observaciones, codigoCategoria } = req.body;
+  const { _id, nombre, descripcion, estado, observaciones, IVA, codigoCategoria } = req.body;
   let mensaje = "Modificación exitosa";
 
   try {
-    await RegistrarCategoria.findOneAndUpdate({ _id: _id }, { nombre: nombre, descripcion: descripcion, estado: estado , observaciones: observaciones, codigoCategoria: codigoCategoria});
+    await RegistrarCategoria.findOneAndUpdate({ _id: _id }, { nombre: nombre, descripcion: descripcion, estado: estado , observaciones: observaciones,IVA: IVA, codigoCategoria: codigoCategoria});
   } catch (error) {
     mensaje = "Problemas al modificar";
     console.log(error);
